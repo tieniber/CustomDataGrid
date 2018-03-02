@@ -36,6 +36,9 @@ export default defineWidget('CustomDataGrid', false, {
             const myDatagrid = renderedWidgets[ 0 ];
 
             myDatagrid.mxform = this.mxform;
+            if(myDatagrid.config.datasource.references) {
+                myDatagrid._dataSource._schemaOptions.references = myDatagrid.config.datasource.references;
+            }
             myDatagrid.applyContext(this.mxcontext, function () { });
 
             if (callback) { callback(); }
