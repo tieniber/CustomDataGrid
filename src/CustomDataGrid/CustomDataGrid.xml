@@ -1,0 +1,20 @@
+<widget id="CustomDataGrid.widget.CustomDataGrid" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Custom Data Grid</name>
+    <description>Dummy widget</description>
+    <icon/>
+    <properties>
+        <property key="gridName" type="string" required="true" defaultValue="">
+            <caption>Grid Name</caption>
+            <category>Appearance</category>
+            <description>Mendix name for the grid.</description>
+        </property>
+        <property key="jsonAttr" type="attribute" required="true" defaultValue="">
+            <caption>JSON Config</caption>
+            <category>Appearance</category>
+            <description>Attribute holding the JSON configuration for the data grid.</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+    </properties>
+</widget>
